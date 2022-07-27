@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 on Raluca Lefticaru</title>
+    <link>https://ralucalefticaru.github.io/publication_types/2/</link>
+    <description>Recent content in 2 on Raluca Lefticaru</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Wed, 16 Sep 2020 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://ralucalefticaru.github.io/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fundamental results for learning deterministic extended finite state machines from queries</title>
+      <link>https://ralucalefticaru.github.io/publication/2020_tcs/</link>
+      <pubDate>Wed, 16 Sep 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2020_tcs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Implementation relations and testing for cyclic systems with refusals and discrete time</title>
+      <link>https://ralucalefticaru.github.io/publication/2020_jss/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2020_jss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A verified and optimized Stream X-Machine testing method, with application to cloud service certification</title>
+      <link>https://ralucalefticaru.github.io/publication/2020_stvr/</link>
+      <pubDate>Tue, 18 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2020_stvr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>P colonies and kernel P systems</title>
+      <link>https://ralucalefticaru.github.io/publication/2018_p_colonies/</link>
+      <pubDate>Sun, 08 Jul 2018 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2018_p_colonies/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kernel P systems: From modelling to verification and testing</title>
+      <link>https://ralucalefticaru.github.io/publication/2018_tcs/</link>
+      <pubDate>Wed, 09 May 2018 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2018_tcs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Design and implementation of membrane controllers for trajectory tracking of nonholonomic wheeled mobile robots</title>
+      <link>https://ralucalefticaru.github.io/publication/2016_icae/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2016_icae/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A modified membrane-inspired algorithm based on particle swarm optimization for mobile robot path planning</title>
+      <link>https://ralucalefticaru.github.io/publication/2015_ijccc/</link>
+      <pubDate>Thu, 01 Oct 2015 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2015_ijccc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3-Col problem modelling using simple kernel P systems</title>
+      <link>https://ralucalefticaru.github.io/publication/2013_ijcm/</link>
+      <pubDate>Mon, 11 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2013_ijcm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Novel Membrane Algorithm Based on Particle Swarm Optimization for Solving Broadcasting Problems</title>
+      <link>https://ralucalefticaru.github.io/publication/2012_jucs/</link>
+      <pubDate>Sun, 01 Jul 2012 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2012_jucs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards Automated Verification of P Systems Using Spin</title>
+      <link>https://ralucalefticaru.github.io/publication/2011_ijncr/</link>
+      <pubDate>Fri, 01 Jul 2011 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2011_ijncr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An empirical evaluation of P system testing techniques</title>
+      <link>https://ralucalefticaru.github.io/publication/2011_naco/</link>
+      <pubDate>Tue, 01 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2011_naco/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Formal Verification of P Systems Using Spin</title>
+      <link>https://ralucalefticaru.github.io/publication/2011_ijfcs/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2011_ijfcs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test generation from P systems using model checking</title>
+      <link>https://ralucalefticaru.github.io/publication/2010_jlap/</link>
+      <pubDate>Sun, 01 Aug 2010 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2010_jlap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Model checking based test generation from P systems using P-Lingua</title>
+      <link>https://ralucalefticaru.github.io/publication/2010_romjist/</link>
+      <pubDate>Tue, 01 Jun 2010 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2010_romjist/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genetic model based testing: A framework and a case study</title>
+      <link>https://ralucalefticaru.github.io/publication/2008_romjist/</link>
+      <pubDate>Wed, 01 Oct 2008 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2008_romjist/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

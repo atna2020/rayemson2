@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 on Raluca Lefticaru</title>
+    <link>https://ralucalefticaru.github.io/publication_types/1/</link>
+    <description>Recent content in 1 on Raluca Lefticaru</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Wed, 28 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ralucalefticaru.github.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spiking Neural P Systems Simulation and Verification</title>
+      <link>https://ralucalefticaru.github.io/publication/2020_bicas/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2020_bicas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spiking Neural P Systems - Matrix Representation and Formal Verification</title>
+      <link>https://ralucalefticaru.github.io/publication/2020_icmc/</link>
+      <pubDate>Tue, 15 Sep 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2020_icmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testing Robots Using CSP</title>
+      <link>https://ralucalefticaru.github.io/publication/2019_tap/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2019_tap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Implementation Relation for Cyclic Systems with Refusals and Discrete Time</title>
+      <link>https://ralucalefticaru.github.io/publication/2019_sefm/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2019_sefm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testing Identifiable Kernel P Systems using an X-machine Approach</title>
+      <link>https://ralucalefticaru.github.io/publication/2018_cmc/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2018_cmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generating Complex Paths for Testing from an EFSM</title>
+      <link>https://ralucalefticaru.github.io/publication/2018_qrs/</link>
+      <pubDate>Mon, 16 Jul 2018 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2018_qrs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Search based Model in the Loop Testing for Cyber Physical Systems</title>
+      <link>https://ralucalefticaru.github.io/publication/2018_from/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2018_from/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Test Suite Generation Approach based on EFSMs using a multi-objective algorithm</title>
+      <link>https://ralucalefticaru.github.io/publication/2017_synasc/</link>
+      <pubDate>Thu, 21 Sep 2017 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2017_synasc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modelling and Validating an Engineering Application in Kernel P Systems</title>
+      <link>https://ralucalefticaru.github.io/publication/2017_cmc/</link>
+      <pubDate>Wed, 26 Jul 2017 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2017_cmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards an Integrated Approach to Verification and Model-Based Testing in System Engineering</title>
+      <link>https://ralucalefticaru.github.io/publication/2017_exter/</link>
+      <pubDate>Wed, 21 Jun 2017 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2017_exter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Hybrid Test Generation Approach Based on Extended Finite State Machines</title>
+      <link>https://ralucalefticaru.github.io/publication/2016_synasc/</link>
+      <pubDate>Sat, 24 Sep 2016 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2016_synasc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Agent-Based Simulation of Kernel P Systems with Division Rules Using FLAME</title>
+      <link>https://ralucalefticaru.github.io/publication/2016_cmc/</link>
+      <pubDate>Mon, 25 Jul 2016 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2016_cmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards agent-based simulation of kernel P systems using FLAME and FLAME GPU</title>
+      <link>https://ralucalefticaru.github.io/publication/2016_wmc/</link>
+      <pubDate>Mon, 11 Jul 2016 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2016_wmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>X-Machine Based Testing for Cloud Services</title>
+      <link>https://ralucalefticaru.github.io/publication/2014_esocc/</link>
+      <pubDate>Fri, 11 Jul 2014 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2014_esocc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Model Checking Kernel P Systems</title>
+      <link>https://ralucalefticaru.github.io/publication/2013_cmc/</link>
+      <pubDate>Tue, 20 Aug 2013 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2013_cmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kernel P Systems: Applications and Implementations</title>
+      <link>https://ralucalefticaru.github.io/publication/2013_bicta/</link>
+      <pubDate>Fri, 12 Jul 2013 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2013_bicta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Improved Test Generation Approach from Extended Finite State Machines Using Genetic Algorithms</title>
+      <link>https://ralucalefticaru.github.io/publication/2012_sefm/</link>
+      <pubDate>Mon, 01 Oct 2012 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2012_sefm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using a kernel P system to solve the 3-Col problem</title>
+      <link>https://ralucalefticaru.github.io/publication/2012_cmc/</link>
+      <pubDate>Tue, 28 Aug 2012 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2012_cmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards an Integrated Approach for Model Simulation, Property Extraction and Verification of P Systems</title>
+      <link>https://ralucalefticaru.github.io/publication/2012_bwmc/</link>
+      <pubDate>Thu, 02 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2012_bwmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using Genetic Algorithms and Model Checking for P Systems Automatic Design</title>
+      <link>https://ralucalefticaru.github.io/publication/2011_nicso/</link>
+      <pubDate>Tue, 20 Sep 2011 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2011_nicso/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Formal Verification of P Systems with Active Membranes through Model Checking</title>
+      <link>https://ralucalefticaru.github.io/publication/2011_cmc/</link>
+      <pubDate>Sat, 20 Aug 2011 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2011_cmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test Data Generation for Event-B Models Using Genetic Algorithms</title>
+      <link>https://ralucalefticaru.github.io/publication/2011_icsecs/</link>
+      <pubDate>Mon, 27 Jun 2011 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2011_icsecs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards Search-Based Testing for Event-B Models</title>
+      <link>https://ralucalefticaru.github.io/publication/2011_icstw/</link>
+      <pubDate>Mon, 21 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2011_icstw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards automated verification of P systems using Spin</title>
+      <link>https://ralucalefticaru.github.io/publication/2011_bwmc/</link>
+      <pubDate>Wed, 02 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2011_bwmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Integrated Approach to P Systems Formal Verification</title>
+      <link>https://ralucalefticaru.github.io/publication/2010_cmc1/</link>
+      <pubDate>Tue, 24 Aug 2010 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2010_cmc1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tools for P system testing</title>
+      <link>https://ralucalefticaru.github.io/publication/2010_cmc2/</link>
+      <pubDate>Tue, 24 Aug 2010 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2010_cmc2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A particle swarm optimization based on P systems</title>
+      <link>https://ralucalefticaru.github.io/publication/2010_icnc/</link>
+      <pubDate>Tue, 10 Aug 2010 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2010_icnc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Model checking based test generation from P systems using P-Lingua</title>
+      <link>https://ralucalefticaru.github.io/publication/2010_bwmc/</link>
+      <pubDate>Tue, 02 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2010_bwmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Automated Model Design Using Genetic Algorithms and Model Checking</title>
+      <link>https://ralucalefticaru.github.io/publication/2009_bci/</link>
+      <pubDate>Thu, 17 Sep 2009 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2009_bci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tuning P Systems for Solving the Broadcasting Problem</title>
+      <link>https://ralucalefticaru.github.io/publication/2009_wmc/</link>
+      <pubDate>Mon, 24 Aug 2009 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2009_wmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Comparative Landscape Analysis of Fitness Functions for Search-Based Testing</title>
+      <link>https://ralucalefticaru.github.io/publication/2008_synasc/</link>
+      <pubDate>Wed, 24 Sep 2008 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2008_synasc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Functional Search-based Testing from State Machines</title>
+      <link>https://ralucalefticaru.github.io/publication/2008_icst/</link>
+      <pubDate>Wed, 09 Apr 2008 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2008_icst/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Search-based Testing using State-based Fitness</title>
+      <link>https://ralucalefticaru.github.io/publication/2008_icstw/</link>
+      <pubDate>Wed, 09 Apr 2008 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2008_icstw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Automatic State-Based Test Generation Using Genetic Algorithms</title>
+      <link>https://ralucalefticaru.github.io/publication/2007_synasc/</link>
+      <pubDate>Wed, 26 Sep 2007 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2007_synasc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>State-based testing is functional testing</title>
+      <link>https://ralucalefticaru.github.io/publication/2007_taicpart/</link>
+      <pubDate>Wed, 12 Sep 2007 00:00:00 +0100</pubDate>
+      
+      <guid>https://ralucalefticaru.github.io/publication/2007_taicpart/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
