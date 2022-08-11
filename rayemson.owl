@@ -1,0 +1,3630 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/rayemson#"
+     xml:base="http://www.semanticweb.org/rayemson"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rayemson="http://www.semanticweb.org/rayemson#"
+     xmlns:untitled-ontology-32="http://www.semanticweb.org/atnaz/ontologies/2021/9/untitled-ontology-32#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/rayemson">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/rayemson"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#duration -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gMonth -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gMonth"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYearMonth -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYearMonth"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#after -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rayemson#after"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#before -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rayemson#before"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#day_of_week -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rayemson#day_of_week">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rayemson#DayOfWeek"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#emits -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rayemson#emits">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rayemson#AtomicEvent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rayemson#Triggers"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rayemson#IndoorAirQualityData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasDisease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rayemson#hasDisease">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rayemson#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rayemson#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasDuration -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rayemson#hasDuration">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rayemson#hasTemporalDuration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasDurationDescription -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rayemson#hasDurationDescription">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rayemson#hasTemporalDuration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasEnd -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rayemson#hasEnd">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rayemson#hasTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasGender -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rayemson#hasGender">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rayemson#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasStart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rayemson#hasStart">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rayemson#hasTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasSymptoms -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rayemson#hasSymptoms">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rayemson#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rayemson#Symptoms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasTemporalDuration -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rayemson#hasTemporalDuration"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rayemson#hasTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasTimeInstant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rayemson#hasTimeInstant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#has_DateTimeDescription -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rayemson#has_DateTimeDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rayemson#Date"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#interval_after -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rayemson#interval_after">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rayemson#after"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rayemson#interval_before"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#interval_before -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rayemson#interval_before">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rayemson#before"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#isTriggeredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rayemson#isTriggeredBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rayemson#Triggers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#month_of_year -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rayemson#month_of_year">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rayemson#MonthsOfYear"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#temporal_unit_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rayemson#temporal_unit_type"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#day -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#day"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#day_of_year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#day_of_year">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasActivities -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasActivities"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasAddress">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rayemson#hasProfile"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rayemson#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasAge">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rayemson#hasProfile"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rayemson#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasBi-WeeklyLog -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasBi-WeeklyLog"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasBreathingIssue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasBreathingIssue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasBreathingProblem -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasBreathingProblem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasCO2Value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasCO2Value"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasCookHour -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasCookHour">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasDailyLog -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasDailyLog"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasDayTime_Symptoms -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasDayTime_Symptoms">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasDevice_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasDevice_ID">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasEthnicity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasEthnicity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rayemson#hasProfile"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasFEV -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasFEV"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasFname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasFname">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rayemson#hasProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasHeartRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasHeartRate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasHeating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasHeating"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasHumidityValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasHumidityValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasInhaler -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasInhaler"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasLname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasLname">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rayemson#hasProfile"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rayemson#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasNationality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasNationality">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rayemson#hasProfile"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rayemson#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasNightTime_Symptoms -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasNightTime_Symptoms"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasOccupation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasOccupation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rayemson#hasProfile"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasPEF -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasPEF"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasPM10Value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasPM10Value"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasPM25Value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasPM25Value"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasPatient -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasPatient">
+        <rdfs:label xml:lang="en">hasPatient</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasProfile -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasProfile"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasShortness_Of_Breathing -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasShortness_Of_Breathing">
+        <rdfs:label xml:lang="en">hasShortness_Of_Breathing</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasTelephone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasTelephone">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rayemson#hasProfile"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rayemson#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasTemperatureValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasTemperatureValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasVclean -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasVclean">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasWeeklyLog -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasWeeklyLog"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasWheezing -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasWheezing"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasWindowOpen -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasWindowOpen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#hasXSD_duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#hasXSD_duration">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#has_day_duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#has_day_duration">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#in_XSD_DateTimeStamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#in_XSD_DateTimeStamp">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#in_XSD_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#in_XSD_date">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#in_XSD_g-Year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#in_XSD_g-Year">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#in_XSD_g-YearMonth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#in_XSD_g-YearMonth">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYearMonth"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#showDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#showDate">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#showMonth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#showMonth"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#showWeek -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#showWeek"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#showYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rayemson#showYear">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Activities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Activities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#OWLClass_0e0916d9_4a29_455a_a3ac_df7eeb9de576"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Acute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Acute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Diagnosis"/>
+        <rdfs:label xml:lang="en">Acute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#AcuteAsthma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#AcuteAsthma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Acute"/>
+        <rdfs:label xml:lang="en">AcuteAsthma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#AcuteExacerbation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#AcuteExacerbation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Acute"/>
+        <rdfs:label xml:lang="en">AcuteExacerbation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Adult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Adult">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasAge"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#AirQualityIndex -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#AirQualityIndex">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#ComplexEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Anthropogenic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Anthropogenic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#AtomicEvent"/>
+        <rdfs:label xml:lang="en">Anthropogenic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#AsthmaAirQuality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#AsthmaAirQuality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#ComplexEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#AsthmaAttack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#AsthmaAttack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Acute"/>
+        <rdfs:label xml:lang="en">AsthmaAttack</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#AsthmaCurrentlyDormant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#AsthmaCurrentlyDormant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Inactive"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/rayemson#InactiveAsthma"/>
+        <rdfs:label xml:lang="en">AsthmaCurrentlyDormant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#AsthmaInPregnancy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#AsthmaInPregnancy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Specific"/>
+        <rdfs:label xml:lang="en">AsthmaInPregnancy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#AsthmaWithFixedAirflowlimitation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#AsthmaWithFixedAirflowlimitation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Specific"/>
+        <rdfs:label xml:lang="en">AsthmaWithFixedAirflow limitation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#AsthmaWithObesity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#AsthmaWithObesity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Specific"/>
+        <rdfs:label xml:lang="en">AsthmaWithObesity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Asthma_Severity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Asthma_Severity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#ComplexEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#AtomicEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#AtomicEvent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#BadSituation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#BadSituation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#AsthmaAirQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Bi-WeeklyLog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Bi-WeeklyLog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Monitoring"/>
+        <rdfs:label xml:lang="en">Bi-WeeklyLog</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Boy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Boy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#Child"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasGender"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/rayemson#Male"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Child"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#BreathingIssue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#BreathingIssue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#OWLClass_0e0916d9_4a29_455a_a3ac_df7eeb9de576"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#BreathingProblem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#BreathingProblem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#OWLClass_0e0916d9_4a29_455a_a3ac_df7eeb9de576"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Breathlessness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Breathlessness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#BrittleAsthma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#BrittleAsthma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Acute"/>
+        <rdfs:label xml:lang="en">BrittleAsthma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#BurningFossil_Fuel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#BurningFossil_Fuel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Anthropogenic"/>
+        <rdfs:label xml:lang="en">BurningFossil_Fuel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#BurningIncense -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#BurningIncense">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#AtomicEvent"/>
+        <rdfs:label xml:lang="en">BurningIncense</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#BushBurning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#BushBurning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Anthropogenic"/>
+        <rdfs:label xml:lang="en">BushBurning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#CO2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#CO2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#IndoorAirQualityData"/>
+        <rdfs:label xml:lang="en">CO2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#CO2Good -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#CO2Good">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasCO2Value"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">400.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#CO2"/>
+        <rdfs:label xml:lang="en">CO2Good</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#CO2High -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#CO2High">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasCO2Value"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1501.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2000.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#CO2"/>
+        <rdfs:label xml:lang="en">CO2High</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#CO2Moderate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#CO2Moderate">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasCO2Value"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1001.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1500.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#CO2"/>
+        <rdfs:label xml:lang="en">CO2Moderate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#CO2VeryHigh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#CO2VeryHigh">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasCO2Value"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2001.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#CO2"/>
+        <rdfs:label xml:lang="en">CO2VeryHigh</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Child -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Child">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasAge"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Chronic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Chronic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Diagnosis"/>
+        <rdfs:label xml:lang="en">Chronic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#ChronicAsthma_with_fixed_airflow_obstruction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#ChronicAsthma_with_fixed_airflow_obstruction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Chronic"/>
+        <rdfs:label xml:lang="en">ChronicAsthma with fixed airflow obstruction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#ComplexEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#ComplexEvent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Confusion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Confusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#CookHour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#CookHour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#OWLClass_0e0916d9_4a29_455a_a3ac_df7eeb9de576"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Cooking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Cooking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#AtomicEvent"/>
+        <rdfs:label xml:lang="en">Cooking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#DailyLog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#DailyLog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Monitoring"/>
+        <rdfs:label xml:lang="en">DailyLog</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Date -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Date">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Time"/>
+        <rdfs:label xml:lang="en">Date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#DayOfWeek -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#DayOfWeek">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Time"/>
+        <rdfs:label xml:lang="en">DayOfWeek</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Diagnosis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Disease"/>
+        <rdfs:label xml:lang="en">Diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#DifficultAsthma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#DifficultAsthma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Acute"/>
+        <rdfs:label xml:lang="en">DifficultAsthma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#DifficultBreathing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#DifficultBreathing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#DifficultyWalking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#DifficultyWalking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Disease"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Exercise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Exercise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#AtomicEvent"/>
+        <rdfs:label xml:lang="en">Excercise</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Exhaustion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Exhaustion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#FastBreathing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#FastBreathing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Gender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Gender">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#Female"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#Male"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Person"/>
+        <rdfs:label xml:lang="en">Gender</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#General -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#General">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Diagnosis"/>
+        <rdfs:label xml:lang="en">General</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Girl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Girl">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#Child"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasGender"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/rayemson#Female"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Child"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Good -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Good">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasValue"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#AirQualityIndex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#GoodSituation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#GoodSituation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#AsthmaAirQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Hazardous -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Hazardous">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasValue"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">301</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#AirQualityIndex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Heating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Heating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#OWLClass_0e0916d9_4a29_455a_a3ac_df7eeb9de576"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Humidity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Humidity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#IndoorAirQualityData"/>
+        <rdfs:label xml:lang="en">Humidity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#HumidityGood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#HumidityGood">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasHumidityValue"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Humidity"/>
+        <rdfs:label xml:lang="en">HumidityGood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#HumidityHazardous -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#HumidityHazardous">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasHumidityValue"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">301.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">500.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Humidity"/>
+        <rdfs:label xml:lang="en">HumidityHazardous</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#HumidityModerate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#HumidityModerate">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasHumidityValue"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">51.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Humidity"/>
+        <rdfs:label xml:lang="en">HumidityModerate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#HumidityUnhealthy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#HumidityUnhealthy">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasHumidityValue"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">151.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">200.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Humidity"/>
+        <rdfs:label xml:lang="en">HumidityUnhealthy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#HumidityUnhealthySensitiveGroup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#HumidityUnhealthySensitiveGroup">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasHumidityValue"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">101.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">150.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Humidity"/>
+        <rdfs:label xml:lang="en">HumidityUnhealthySensitiveGroup</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#HumidityVeryUnhealthy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#HumidityVeryUnhealthy">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasHumidityValue"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">200.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">300.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Humidity"/>
+        <rdfs:label xml:lang="en">HumidityVeryUnhealthy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Inactive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Inactive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Diagnosis"/>
+        <rdfs:label xml:lang="en">Inactive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#InactiveAsthma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#InactiveAsthma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Inactive"/>
+        <rdfs:label xml:lang="en">InactiveAsthma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#IndoorAirQualityData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#IndoorAirQualityData"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Inhaler -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Inhaler">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#OWLClass_0e0916d9_4a29_455a_a3ac_df7eeb9de576"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Ironing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Ironing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#AtomicEvent"/>
+        <rdfs:label xml:lang="en">Ironing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#LateOnsetAsthma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#LateOnsetAsthma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Specific"/>
+        <rdfs:label xml:lang="en">LateOnset Asthma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#LessTalking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#LessTalking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Man -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Man">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#Adult"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasGender"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/rayemson#Male"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Adult"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#MildIntermittent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#MildIntermittent">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasDayTime_Symptoms"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasNightTime_Symptoms"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasPEF"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Asthma_Severity"/>
+        <rdfs:comment>PEF(peak expiratory flow)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#MildPersisentAsthma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#MildPersisentAsthma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Chronic"/>
+        <rdfs:label xml:lang="en">MildPersisentAsthma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#MildPersisentAsthma_AcuteExacerbation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#MildPersisentAsthma_AcuteExacerbation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Chronic"/>
+        <rdfs:label xml:lang="en">MildPersisentAsthma_AcuteExacerbation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#MildPersisentAsthma_StatusAsthmaticus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#MildPersisentAsthma_StatusAsthmaticus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Chronic"/>
+        <rdfs:label xml:lang="en">MildPersisentAsthma_StatusAsthmaticus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#MildPersisentAsthma_Uncomplicated -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#MildPersisentAsthma_Uncomplicated">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Chronic"/>
+        <rdfs:label xml:lang="en">MildPersisentAsthma_Uncomplicated</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#MildPersistent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#MildPersistent">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasDayTime_Symptoms"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasNightTime_Symptoms"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasPEF"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Asthma_Severity"/>
+        <rdfs:comment>PEF(peak expiratory flow)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Moderate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Moderate">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasValue"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">51</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#AirQualityIndex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#ModeratePersisentAsthma_AcuteExacerbation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#ModeratePersisentAsthma_AcuteExacerbation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Chronic"/>
+        <rdfs:label xml:lang="en">ModeratePersisentAsthma_AcuteExacerbation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#ModeratePersisentAsthma_StatusAsthmaticus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#ModeratePersisentAsthma_StatusAsthmaticus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Chronic"/>
+        <rdfs:label xml:lang="en">ModeratePersisentAsthma_StatusAsthmaticus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#ModeratePersisentAsthma_Uncomplicated -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#ModeratePersisentAsthma_Uncomplicated">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Chronic"/>
+        <rdfs:label xml:lang="en">ModeratePersisentAsthma_Uncomplicated</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#ModeratePersistent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#ModeratePersistent">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasDayTime_Symptoms"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasNightTime_Symptoms"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasPEF"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Asthma_Severity"/>
+        <rdfs:comment>PEF(peak expiratory flow)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#ModeratePersistentAsthma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#ModeratePersistentAsthma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Chronic"/>
+        <rdfs:label xml:lang="en">ModeratePersistentAsthma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#ModerateSituation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#ModerateSituation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#AsthmaAirQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Monitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Monitoring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Disease"/>
+        <rdfs:label xml:lang="en">Monitoring</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#MonthsOfYear -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#MonthsOfYear">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Time"/>
+        <rdfs:label xml:lang="en">MonthOfYear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#NonAllergicAsthma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#NonAllergicAsthma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Specific"/>
+        <rdfs:label xml:lang="en">NonAllergicAsthma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#OWLClass_0e0916d9_4a29_455a_a3ac_df7eeb9de576 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#OWLClass_0e0916d9_4a29_455a_a3ac_df7eeb9de576">
+        <rdfs:label xml:lang="en">IndoorActivities</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#OccupationalAsthma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#OccupationalAsthma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Specific"/>
+        <rdfs:label xml:lang="en">OccupationalAsthma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#PM10 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#PM10">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#IndoorAirQualityData"/>
+        <rdfs:label xml:lang="en">PM10</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#PM10Good -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#PM10Good">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasPM10Value"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#PM10"/>
+        <rdfs:label xml:lang="en">PM10Good</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#PM10High -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#PM10High">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasPM10Value"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">45.5</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">65.4</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#PM10"/>
+        <rdfs:label xml:lang="en">PM10High</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#PM10Moderate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#PM10Moderate">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasPM10Value"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">22.1</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">45.4</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#PM10"/>
+        <rdfs:label xml:lang="en">PM10Moderate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#PM10VeryHigh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#PM10VeryHigh">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasPM10Value"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">65.5</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#PM10"/>
+        <rdfs:label xml:lang="en">PM10VeryHigh</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#PM2.5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#PM2.5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#IndoorAirQualityData"/>
+        <rdfs:label xml:lang="en">PM2.5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#PM2.5Good -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#PM2.5Good">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasPM25Value"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#PM2.5"/>
+        <rdfs:label xml:lang="en">PM2.5Good</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#PM2.5High -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#PM2.5High">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasPM25Value"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">35.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">55.4</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#PM2.5"/>
+        <rdfs:label xml:lang="en">PM2.5High</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#PM2.5Moderate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#PM2.5Moderate">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasPM25Value"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.1</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">35.4</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#PM2.5"/>
+        <rdfs:label xml:lang="en">PM2.5Moderate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#PM2.5VeryHigh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#PM2.5VeryHigh">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasPM25Value"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">55.5</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#PM2.5"/>
+        <rdfs:label xml:lang="en">PM2.5VeryHigh</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Sensor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#SeverePersistent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#SeverePersistent">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rayemson#Symptoms"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasDayTime_Symptoms"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasNightTime_Symptoms"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasPEF"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Asthma_Severity"/>
+        <rdfs:comment>FEV(forced expiratory volume)</rdfs:comment>
+        <rdfs:comment>PEF(peak expiratory flow)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#SeverePersistentAsthma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#SeverePersistentAsthma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Chronic"/>
+        <rdfs:label xml:lang="en">SeverePersistentAsthma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#SeverePersistentAsthma_AcuteExacerbation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#SeverePersistentAsthma_AcuteExacerbation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Chronic"/>
+        <rdfs:label xml:lang="en">SeverePersistentAsthma_AcuteExacerbation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#SeverePersistentAsthma_StatusAsthmaticus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#SeverePersistentAsthma_StatusAsthmaticus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Chronic"/>
+        <rdfs:label xml:lang="en">SeverePersistentAsthma_StatusAsthmaticus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#SeverePersistentAsthma_Uncomplicated -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#SeverePersistentAsthma_Uncomplicated">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Chronic"/>
+        <rdfs:label xml:lang="en">SeverePersistentAsthma_Uncomplicated</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Shortness_Of_Breathing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Shortness_Of_Breathing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#OWLClass_0e0916d9_4a29_455a_a3ac_df7eeb9de576"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Specific -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Specific">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Diagnosis"/>
+        <rdfs:label xml:lang="en">Specific</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Symptoms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Symptoms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Temperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Temperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#IndoorAirQualityData"/>
+        <rdfs:label xml:lang="en">Temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#TemperatureGood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#TemperatureGood">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasTemperatureValue"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Temperature"/>
+        <rdfs:label xml:lang="en">TemperatureGood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#TemperatureHazardous -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#TemperatureHazardous">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasTemperatureValue"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">301.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">500.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Temperature"/>
+        <rdfs:label xml:lang="en">TemperatureHazardous</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#TemperatureModerate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#TemperatureModerate">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasTemperatureValue"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">51.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Temperature"/>
+        <rdfs:label xml:lang="en">TemperatureModerate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#TemperatureUnhealthy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#TemperatureUnhealthy">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasTemperatureValue"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">151.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">200.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Temperature"/>
+        <rdfs:label xml:lang="en">TemperatureUnhealthy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#TemperatureUnhealthySensitiveGroup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#TemperatureUnhealthySensitiveGroup">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasTemperatureValue"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">101.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">150.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Temperature"/>
+        <rdfs:label xml:lang="en">TemperatureUnhealthySensitiveGroup</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#TemperatureVeryUnhealthy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#TemperatureVeryUnhealthy">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasTemperatureValue"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">200.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">300.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Temperature"/>
+        <rdfs:label xml:lang="en">TemperatureVeryUnhealthy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Time">
+        <rdfs:label xml:lang="en">Time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Triggers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Triggers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Unhealthy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Unhealthy">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasValue"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">151</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#AirQualityIndex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#UnhealthySensitiveGroup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#UnhealthySensitiveGroup">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasValue"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">101</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#AirQualityIndex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#VClean -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#VClean">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#OWLClass_0e0916d9_4a29_455a_a3ac_df7eeb9de576"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#VCleaning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#VCleaning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#AtomicEvent"/>
+        <rdfs:label xml:lang="en">VCleaning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#VeryUnhealthy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#VeryUnhealthy">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasValue"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#AirQualityIndex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#WashingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#WashingMachine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#AtomicEvent"/>
+        <rdfs:label xml:lang="en">WashingMachine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#WeeklyLog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#WeeklyLog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Monitoring"/>
+        <rdfs:label xml:lang="en">WeeklyLog</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Wheezing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Wheezing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#OWLClass_0e0916d9_4a29_455a_a3ac_df7eeb9de576"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#WindowOpen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#WindowOpen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#OWLClass_0e0916d9_4a29_455a_a3ac_df7eeb9de576"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Woman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rayemson#Woman">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#Adult"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasGender"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/rayemson#Female"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rayemson#Adult"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#All_Activities -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#All_Activities">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#April -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#April">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#MonthsOfYear"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#August -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#August">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#MonthsOfYear"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#AvoidEnvironmentCigraetteSmoke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#AvoidEnvironmentCigraetteSmoke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#AvoidGoingOut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#AvoidGoingOut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#AvoidSituationEnvironmentBeacauseOfDust -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#AvoidSituationEnvironmentBeacauseOfDust">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#AvoidSmells -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#AvoidSmells">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#BreathingDifficulty -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#BreathingDifficulty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#BreathingProblems -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#BreathingProblems">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#DailyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#ChestHeaviness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#ChestHeaviness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#ChestTighness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#ChestTighness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#ClearTheThroat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#ClearTheThroat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#ConcernedAboutAsthma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#ConcernedAboutAsthma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#CookHour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#CookHour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#DailyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#CookType -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#CookType">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#DailyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Coughing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Coughing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#December -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#December">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#MonthsOfYear"/>
+        <rdfs:label xml:lang="en">December</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#DustAllerges -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#DustAllerges">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#ExhaustFan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#ExhaustFan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#DailyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#ExposedToCigaretteSmoke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#ExposedToCigaretteSmoke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#ExposedToStrongSmell -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#ExposedToStrongSmell">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#February -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#February">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#MonthsOfYear"/>
+        <rdfs:label xml:lang="en">February</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Female -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Female">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Gender"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#FightingForAir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#FightingForAir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Friday -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Friday">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#DayOfWeek"/>
+        <rdfs:label xml:lang="en">Friday</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Frustrated -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Frustrated">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Good -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Good"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Hazardous -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Hazardous"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Heating -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Heating">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#DailyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#HeavyBreathing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#HeavyBreathing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#HowManyPuffs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#HowManyPuffs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Inhaler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Inhaler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#DailyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#January -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#January">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#MonthsOfYear"/>
+        <rdfs:label xml:lang="en">January</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#July -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#July">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#MonthsOfYear"/>
+        <rdfs:label xml:lang="en">July</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#June -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#June">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#MonthsOfYear"/>
+        <rdfs:label xml:lang="en">June</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Male -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Male">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Gender"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#March -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#March">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#MonthsOfYear"/>
+        <rdfs:label xml:lang="en">March</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#May -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#May">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#MonthsOfYear"/>
+        <rdfs:label xml:lang="en">May</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Moderate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Moderate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Monday -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Monday">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#DayOfWeek"/>
+        <rdfs:label xml:lang="en">Monday</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#MorningAsthmaSymptoms -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#MorningAsthmaSymptoms">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#MorningSymptoms -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#MorningSymptoms">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#NeedOfMedication -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#NeedOfMedication">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#NoAsthmaMedication -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#NoAsthmaMedication">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#NoGoodSleep -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#NoGoodSleep">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#November -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#November">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#MonthsOfYear"/>
+        <rdfs:label xml:lang="en">November</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#OWLNamedIndividual_434b7192_3be9_4e9e_bd95_9ff50dff2a1d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#OWLNamedIndividual_434b7192_3be9_4e9e_bd95_9ff50dff2a1d">
+        <rdfs:label xml:lang="en">Day(unit of temporal duration)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#OWLNamedIndividual_8af2eea9_c677_499d_8ab9_4cf1b1bdf482 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#OWLNamedIndividual_8af2eea9_c677_499d_8ab9_4cf1b1bdf482">
+        <rdfs:label xml:lang="en">Asthma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#October -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#October">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#MonthsOfYear"/>
+        <rdfs:label xml:lang="en">October</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Patient1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Patient1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Person"/>
+        <hasActivities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WindowOpen</hasActivities>
+        <hasAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bradford</hasAddress>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</hasAge>
+        <hasBi-WeeklyLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DustAllerges
+AvoidSmells</hasBi-WeeklyLog>
+        <hasBreathingIssue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bad</hasBreathingIssue>
+        <hasBreathingProblem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A very great deal</hasBreathingProblem>
+        <hasCO2Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">882.0</hasCO2Value>
+        <hasCookHour rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasCookHour>
+        <hasDailyLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wheezing</hasDailyLog>
+        <hasDayTime_Symptoms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasDayTime_Symptoms>
+        <hasDevice_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LIAQ1</hasDevice_ID>
+        <hasEthnicity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">British</hasEthnicity>
+        <hasFEV rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</hasFEV>
+        <hasFname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jay</hasFname>
+        <hasHumidityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">45.08</hasHumidityValue>
+        <hasLname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James</hasLname>
+        <hasNationality rdf:datatype="http://www.w3.org/2001/XMLSchema#string">German</hasNationality>
+        <hasNightTime_Symptoms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasNightTime_Symptoms>
+        <hasOccupation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineer</hasOccupation>
+        <hasPEF rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</hasPEF>
+        <hasPM10Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.246</hasPM10Value>
+        <hasPM25Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">14.52</hasPM25Value>
+        <hasTemperatureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">22.81</hasTemperatureValue>
+        <hasVclean rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yes</hasVclean>
+        <hasWeeklyLog rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HowManyPuffs</hasWeeklyLog>
+        <hasWindowOpen rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasWindowOpen>
+        <showDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">6/4/2022</showDate>
+        <showWeek rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Week-1</showWeek>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Patient10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Patient10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Person"/>
+        <hasActivities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">breathing</hasActivities>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasAge>
+        <hasBreathingIssue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bad</hasBreathingIssue>
+        <hasBreathingProblem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amoderate amount</hasBreathingProblem>
+        <hasCO2Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">686.8</hasCO2Value>
+        <hasCookHour rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasCookHour>
+        <hasDayTime_Symptoms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasDayTime_Symptoms>
+        <hasDevice_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LIAQ2</hasDevice_ID>
+        <hasHumidityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">61.67</hasHumidityValue>
+        <hasNightTime_Symptoms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasNightTime_Symptoms>
+        <hasPEF rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasPEF>
+        <hasPM10Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.92</hasPM10Value>
+        <hasPM25Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.383</hasPM25Value>
+        <hasTemperatureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">22.81</hasTemperatureValue>
+        <showDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">24/05/2022</showDate>
+        <showWeek rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Week-1</showWeek>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Patient3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Patient3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Person"/>
+        <hasActivities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wheezing</hasActivities>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasAge>
+        <hasCO2Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">655.5</hasCO2Value>
+        <hasDayTime_Symptoms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasDayTime_Symptoms>
+        <hasDevice_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LIAQ3</hasDevice_ID>
+        <hasFEV rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">63</hasFEV>
+        <hasHumidityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">61.44</hasHumidityValue>
+        <hasNightTime_Symptoms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasNightTime_Symptoms>
+        <hasPEF rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78</hasPEF>
+        <hasPM10Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">21.29</hasPM10Value>
+        <hasPM25Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.674</hasPM25Value>
+        <hasTemperatureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.56</hasTemperatureValue>
+        <showDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">5/6/2022</showDate>
+        <showWeek rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Week-1</showWeek>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Patient4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Patient4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Person"/>
+        <hasActivities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AllActivities</hasActivities>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</hasAge>
+        <hasCO2Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">773.2</hasCO2Value>
+        <hasDayTime_Symptoms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasDayTime_Symptoms>
+        <hasDevice_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LIAQ4</hasDevice_ID>
+        <hasHumidityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">61.8</hasHumidityValue>
+        <hasNightTime_Symptoms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasNightTime_Symptoms>
+        <hasPEF rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</hasPEF>
+        <hasPM10Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">18.24</hasPM10Value>
+        <hasPM25Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.5</hasPM25Value>
+        <hasTemperatureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">17.42</hasTemperatureValue>
+        <showDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">29/06/2022</showDate>
+        <showWeek rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Week-1</showWeek>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Patient5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Patient5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Person"/>
+        <hasActivities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inhaler</hasActivities>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasAge>
+        <hasCO2Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">773.2</hasCO2Value>
+        <hasDayTime_Symptoms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasDayTime_Symptoms>
+        <hasDevice_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LIAQ5</hasDevice_ID>
+        <hasHumidityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">61.8</hasHumidityValue>
+        <hasNightTime_Symptoms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasNightTime_Symptoms>
+        <hasPEF rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasPEF>
+        <hasPM10Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">32.7</hasPM10Value>
+        <hasPM25Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.5</hasPM25Value>
+        <hasTemperatureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.42</hasTemperatureValue>
+        <showDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">20/06/2022</showDate>
+        <showWeek rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Week-1</showWeek>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Patient6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Patient6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Person"/>
+        <hasActivities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CookHour</hasActivities>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</hasAge>
+        <hasCO2Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">756.7</hasCO2Value>
+        <hasDayTime_Symptoms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasDayTime_Symptoms>
+        <hasDevice_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LIAQ3</hasDevice_ID>
+        <hasHumidityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">61.43</hasHumidityValue>
+        <hasNightTime_Symptoms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasNightTime_Symptoms>
+        <hasPEF rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hasPEF>
+        <hasPM10Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">41.26</hasPM10Value>
+        <hasPM25Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">38.1</hasPM25Value>
+        <hasTemperatureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">17.44</hasTemperatureValue>
+        <showDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">8/6/2022</showDate>
+        <showWeek rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Week-3</showWeek>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Patient7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Patient7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Person"/>
+        <hasActivities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vclean</hasActivities>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</hasAge>
+        <hasCO2Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">720.0</hasCO2Value>
+        <hasDayTime_Symptoms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasDayTime_Symptoms>
+        <hasDevice_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LIAQ3</hasDevice_ID>
+        <hasHumidityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">63.78</hasHumidityValue>
+        <hasHumidityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">648.7</hasHumidityValue>
+        <hasNightTime_Symptoms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasNightTime_Symptoms>
+        <hasPEF rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79</hasPEF>
+        <hasPM10Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">17.86</hasPM10Value>
+        <hasPM25Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.85</hasPM25Value>
+        <hasTemperatureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">17.45</hasTemperatureValue>
+        <showDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">19/04/2022</showDate>
+        <showDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">9/6/2022</showDate>
+        <showWeek rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Week-1</showWeek>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Patient8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Patient8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Person"/>
+        <hasActivities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Breathing</hasActivities>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</hasAge>
+        <hasCO2Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">720.0</hasCO2Value>
+        <hasDayTime_Symptoms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasDayTime_Symptoms>
+        <hasDevice_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LIAQ4</hasDevice_ID>
+        <hasHumidityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">68.98</hasHumidityValue>
+        <hasNightTime_Symptoms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasNightTime_Symptoms>
+        <hasPEF rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</hasPEF>
+        <hasPM10Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">32.7</hasPM10Value>
+        <hasPM25Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">28.2</hasPM25Value>
+        <hasTemperatureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">17.07</hasTemperatureValue>
+        <showDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">21/6/2022</showDate>
+        <showWeek rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Week-1</showWeek>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Patient9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Patient9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Person"/>
+        <hasActivities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heating</hasActivities>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasAge>
+        <hasCO2Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">612.0</hasCO2Value>
+        <hasDayTime_Symptoms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasDayTime_Symptoms>
+        <hasDevice_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LIAQ1</hasDevice_ID>
+        <hasHumidityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">68.84</hasHumidityValue>
+        <hasNightTime_Symptoms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasNightTime_Symptoms>
+        <hasPEF rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</hasPEF>
+        <hasPM10Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.19</hasPM10Value>
+        <hasPM25Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">11.18</hasPM25Value>
+        <hasTemperatureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">17.54</hasTemperatureValue>
+        <showDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">20/04/2022</showDate>
+        <showWeek rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Week-1</showWeek>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Saturday -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Saturday">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#DayOfWeek"/>
+        <rdfs:label xml:lang="en">Saturday</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#September -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#September">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#MonthsOfYear"/>
+        <rdfs:label xml:lang="en">September</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#ShortOfBreath -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#ShortOfBreath">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#ShortnessOfbreathing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#ShortnessOfbreathing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#WeeklyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Smoking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Smoking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#DailyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Sunday -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Sunday">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#DayOfWeek"/>
+        <rdfs:label xml:lang="en">Sunday</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Thursday -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Thursday">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#DayOfWeek"/>
+        <rdfs:label xml:lang="en">Thursday</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Tuesday -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Tuesday">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#DayOfWeek"/>
+        <rdfs:label xml:lang="en">Tuesday</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Unhealthy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Unhealthy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#UnhealthySensitiveGroup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#UnhealthySensitiveGroup"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#VaccumClean -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#VaccumClean">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#DailyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#VeryUnhealthy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#VeryUnhealthy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#WakeupMorning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#WakeupMorning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#DailyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#WakeupNight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#WakeupNight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#DailyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Wednesday -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Wednesday">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#DayOfWeek"/>
+        <rdfs:label xml:lang="en">Wednesday</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Wheezing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Wheezing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Bi-WeeklyLog"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#DailyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#WindowOpen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#WindowOpen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#DailyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Woodlog -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Woodlog">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#DailyLog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#patient2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#patient2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rayemson#Person"/>
+        <hasActivities rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heating</hasActivities>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</hasAge>
+        <hasCO2Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">523.2</hasCO2Value>
+        <hasDayTime_Symptoms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasDayTime_Symptoms>
+        <hasDevice_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LIAQ1</hasDevice_ID>
+        <hasFEV rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</hasFEV>
+        <hasFname>Pee</hasFname>
+        <hasHumidityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">60.95</hasHumidityValue>
+        <hasNightTime_Symptoms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasNightTime_Symptoms>
+        <hasPEF rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</hasPEF>
+        <hasPM10Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">31.37</hasPM10Value>
+        <hasPM25Value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">29.4</hasPM25Value>
+        <hasTemperatureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.73</hasTemperatureValue>
+        <showDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">6/4/2022</showDate>
+        <showWeek rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Week-1</showWeek>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Minute(unit_of_temporal_duration) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Minute(unit_of_temporal_duration)">
+        <rdfs:label xml:lang="en">Minute(unit of temporal duration)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Month(unit_of_temporal_duration) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Month(unit_of_temporal_duration)">
+        <rdfs:label xml:lang="en">Month(unit of temporal duration)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Second(unit_of_temporal_duration) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Second(unit_of_temporal_duration)">
+        <rdfs:label xml:lang="en">Second(unit of temporal duration)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Week(unit_of_temperoal_duration) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Week(unit_of_temperoal_duration)">
+        <rdfs:label xml:lang="en">Week(unit of temporal duration)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rayemson#Year(unit_of_temporal_duration) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rayemson#Year(unit_of_temporal_duration)">
+        <rdfs:label xml:lang="en">Year(unit of temporal duration)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#Good">
+        <rdfs:label xml:lang="en">Good</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#Hazardous">
+        <rdfs:label xml:lang="en">Hazardous</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#Moderate">
+        <rdfs:label xml:lang="en">Moderate</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#Unhealthy">
+        <rdfs:label xml:lang="en">Unhealthy</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#UnhealthySensitiveGroup">
+        <rdfs:label xml:lang="en">UnhealthySensitiveGroup</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#VeryUnhealthy">
+        <rdfs:label xml:lang="en">VeryUnhealthy</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasNightTime_Symptoms"/>
+        <owl:someValuesFrom>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:someValuesFrom>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasPEF"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasNightTime_Symptoms"/>
+        <owl:someValuesFrom>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:someValuesFrom>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasPEF"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasNightTime_Symptoms"/>
+        <owl:someValuesFrom>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:someValuesFrom>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasPEF"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasNightTime_Symptoms"/>
+        <owl:someValuesFrom>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:someValuesFrom>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/rayemson#hasPEF"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Restriction>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#Acute"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#Chronic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#General"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#Inactive"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#Specific"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#AcuteAsthma"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#AcuteExacerbation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#AsthmaAttack"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#BrittleAsthma"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#DifficultAsthma"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#AsthmaInPregnancy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#AsthmaWithFixedAirflowlimitation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#AsthmaWithObesity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#LateOnsetAsthma"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#NonAllergicAsthma"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#OccupationalAsthma"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#ChronicAsthma_with_fixed_airflow_obstruction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#MildPersisentAsthma"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#MildPersisentAsthma_AcuteExacerbation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#MildPersisentAsthma_StatusAsthmaticus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#MildPersisentAsthma_Uncomplicated"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#ModeratePersisentAsthma_AcuteExacerbation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#ModeratePersisentAsthma_StatusAsthmaticus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#ModeratePersisentAsthma_Uncomplicated"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#ModeratePersistentAsthma"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#SeverePersistentAsthma"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#SeverePersistentAsthma_AcuteExacerbation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#SeverePersistentAsthma_StatusAsthmaticus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/rayemson#SeverePersistentAsthma_Uncomplicated"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/atnaz/ontologies/2021/9/untitled-ontology-32#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/atnaz/ontologies/2021/9/untitled-ontology-32#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasDisease</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/rayemson#hasDisease"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/atnaz/ontologies/2021/9/untitled-ontology-32#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/atnaz/ontologies/2021/9/untitled-ontology-32#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
